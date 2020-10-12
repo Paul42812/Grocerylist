@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title id="title"></title>
+</head>
+
+<body>
+    <main>
+        <div class="settings">
+            <h2 id="settings_title">Management:</h2>
+            <form>
+                <input type="text" id="additem">
+                <button type="button" onclick="add()" class="button" id="add_item">l</button><br>
+                <button type="button" onclick="imp()" class="button" id="imp_list">l</button>
+                <input type="file" id="myfile" name="myfile" class="myfile button"><br>
+                <button type="button" onclick="exp()" class="button" id="exp_list">l</button>
+                <button type="button" onclick="clr()" class="button" id="clear">l</button>
+            </form><br>
+        </div><br>
+        <div class="listbox">
+            <h2 id="listbox_title"></h2>
+            <ul id="mainlist"></ul><br>
+        </div>
+    </main>
+
+    <!-- File saver from https://github.com/eligrey -->
+    <script src="https://combinatronics.com/eligrey/FileSaver.js/master/src/FileSaver.js" async></script>
+    <script src="config.js" async></script>
+    <script src="app.js" async></script>
+</body>
+
+</html>

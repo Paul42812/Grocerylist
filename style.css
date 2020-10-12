@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(120, 120, 120);
+}
+
+ul {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 1em;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+div.listbox {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+div.settings {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(66, 101, 143);
+    border-radius: 20px;
+}
+
+button.button {
+    margin: 1px;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+button.listbutton {
+    background-color: rgb(187, 58, 58);
+    text-decoration-color: blue;
+    margin-left: 3px;
+    border-radius: 5px;
+}
