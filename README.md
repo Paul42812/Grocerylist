@@ -7,16 +7,11 @@
 * Export lists as csv
 * Import csv lists
 * Clear all items from the list
-
-### Planned Features
-* Config.json
-* Custom error messages and labels
-* Custom nameable lists 
-
+* Configuration with the config.js
 
 <!--
 ###Configuration
-* settings.json
+* config.js
 	* labels:
 		* title: Title of the page
 		* settings_title: Title of configuration box
@@ -40,22 +35,9 @@
 			* alredy_there: The item is alredy in the list
 -->
 
-### Docker:
-* docker build command: 
-```bash
-docker build -t grocerylist .
-```
-
-* docker run command: 
-```bash 
-docker run -ti -d -p 42812:80 --rm grocerylist
-```
 
 ### Additional Informations:
 * Dont select to huge files (Your system could crash)
-* Config.json not functional jet
-* This is an unstable version, there may be bugs.
-* Exported lists alsways start with "Entries:"
 
 ### Used Scripts:
 * FileSaver.js from [eligrey](https://github.com/eligrey/FileSaver.js)
