@@ -9,28 +9,32 @@
 </head>
 
 <body>
-    <main>
+    <main id="main">
         <div class="settings">
             <h2 id="settings_title">Management:</h2>
             <form>
-                <input type="text" id="additem">
+                <input type="text" id="additem" onkeypress="return eadd(event)">
                 <button type="button" onclick="add()" class="button" id="add_item">l</button><br>
                 <button type="button" onclick="imp()" class="button" id="imp_list">l</button>
                 <input type="file" id="myfile" name="myfile" class="myfile button"><br>
                 <button type="button" onclick="exp()" class="button" id="exp_list">l</button>
-                <button type="button" onclick="clr()" class="button" id="clear">l</button>
+                <button type="button" onclick="clr()" class="button" id="clear">l</button><br>
+                <span>Advanced Settings:</span>
+                <input type="checkbox" id="showadv" value="advsettings">
             </form><br>
         </div><br>
         <div class="listbox">
             <h2 id="listbox_title"></h2>
-            <ul id="mainlist"></ul><br>
+            <ul id="mainlist"></ul>
+            <h2 id="listdone_title">Done:</h2>
+            <ul id="donelist"></ul>
         </div>
     </main>
 
     <!-- File saver from https://github.com/eligrey -->
     <script src="https://combinatronics.com/eligrey/FileSaver.js/master/src/FileSaver.js" async></script>
-    <script src="config.js" async></script>
-    <script src="app.js" async></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

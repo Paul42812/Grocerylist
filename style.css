@@ -1,8 +1,29 @@
+:root {
+    --top-c: 10px;
+    --show-main: block;
+    --show-done: none;
+}
+
 body {
     background-color: rgb(120, 120, 120);
 }
 
-ul {
+#mainlist {
+    display: var(--show-main);
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 1em;
+    background-color: lightblue;
+    border-radius: 20px;
+}
+
+#listdone_title {
+    display: var(--show-done);
+}
+
+#donelist {
+    display: var(--show-done);
     border: 5px;
     border-style: solid;
     border-color: black;
@@ -43,4 +64,45 @@ button.listbutton {
     text-decoration-color: blue;
     margin-left: 3px;
     border-radius: 5px;
+}
+
+button.changebutton {
+    background-color: rgb(51, 102, 255);
+    text-decoration-color: blue;
+    border-radius: 5px;
+}
+
+#ch {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    position: absolute;
+    top: var(--top-c);
+    right: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: 255px;
+}
+
+#chname {
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+#brk {
+    position: relative;
+    left: 20px;
+    top: 8px;
+    background-color: rgb(187, 58, 58);
+    text-decoration-color: blue;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+#showadv {
+    /*zoom: 2;
+    transform: scale(2);*/
 }
