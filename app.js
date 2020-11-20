@@ -1,7 +1,7 @@
 var mainlist;
 var selected;
 var selectedlist;
-var usedonelist = false;
+var usedonelist = true;
 var items = [];
 var doneitems = [];
 
